@@ -5,15 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PowerPoint Design Services</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Fixed navigation */
+    #nav {
+      position: fixed;
+      top: 0;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    #nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    /* Header styling */
+    header {
+      background: #f8f8f8;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    /* Previous works section */
+    #previousWorks {
+      padding: 50px;
+      background-color: #e0e0e0;
+    }
+    .work {
+      margin: 10px;
+      display: inline-block;
+      width: 250px;
+      height: 200px;
+      background-color: #ddd;
+      text-align: center;
+      line-height: 200px;
+      color: #333;
+      font-size: 1.2em;
+      border-radius: 5px;
+    }
+    #quote {
+      padding: 50px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    #quote button {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
+  <!-- Fixed Navigation -->
+  <div id="nav">
+    <a href="#quote">Estimate a Quote</a>
+  </div>
+
   <header>
-    <h1>Custom PowerPoint Design</h1>
-    <p>Get a quote, order your deck, and leave a review — all in one place.</p>
+    <h1>Custom PowerPoint Design Services</h1>
+    <p>Transform your ideas into stunning PowerPoint presentations.</p>
   </header>
 
+  <!-- Previous Works Section -->
+  <section id="previousWorks">
+    <h2>Previous Works</h2>
+    <p>Here are some of the projects I've worked on:</p>
+    <div class="work">Project 1</div>
+    <div class="work">Project 2</div>
+    <div class="work">Project 3</div>
+    <!-- Add images or descriptions of your actual previous works here -->
+  </section>
+
+  <!-- Quote Estimation Section -->
   <section id="quote">
-    <h2>1. Get an Estimate</h2>
+    <h2>Get an Estimate</h2>
+    <p>Fill out the form below to estimate the cost of your PowerPoint design project.</p>
     <label>Number of slides: <input type="number" id="slides" min="1" /></label>
     <label><input type="checkbox" id="animations" /> Include animations</label>
     <label><input type="checkbox" id="branding" /> Include custom branding</label>
@@ -21,33 +98,6 @@
     <p id="quoteResult"></p>
   </section>
 
-  <section id="order">
-    <h2>2. Place Your Order</h2>
-    <form id="orderForm">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="details" placeholder="Project details..." required></textarea>
-      <input type="hidden" name="estimated_price" id="hiddenPrice" />
-      <button type="submit">Submit Order</button>
-    </form>
-  </section>
-
-  <section id="payment">
-    <h2>3. Make a Payment</h2>
-    <!-- Stripe and PayPal buttons will go here -->
-  </section>
-
-  <section id="reviews">
-    <h2>4. Leave a Review</h2>
-    <form id="reviewForm">
-      <input type="text" placeholder="Your name (optional)" id="reviewName" />
-      <textarea placeholder="Write your review..." id="reviewText" required></textarea>
-      <button type="submit">Submit Review</button>
-    </form>
-    <div id="reviewList"></div>
-  </section>
-
-  <!-- Tawk.to live chat script will go here -->
   <script src="script.js"></script>
 </body>
 </html>
