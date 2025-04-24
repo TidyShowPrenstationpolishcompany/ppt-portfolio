@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PowerPoint Design Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Custom PowerPoint Design</h1>
+    <p>Get a quote, order your deck, and leave a review — all in one place.</p>
+  </header>
+
+  <section id="quote">
+    <h2>1. Get an Estimate</h2>
+    <label>Number of slides: <input type="number" id="slides" min="1" /></label>
+    <label><input type="checkbox" id="animations" /> Include animations</label>
+    <label><input type="checkbox" id="branding" /> Include custom branding</label>
+    <button onclick="calculateQuote()">Estimate Price</button>
+    <p id="quoteResult"></p>
+  </section>
+
+  <section id="order">
+    <h2>2. Place Your Order</h2>
+    <form id="orderForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="details" placeholder="Project details..." required></textarea>
+      <input type="hidden" name="estimated_price" id="hiddenPrice" />
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <section id="payment">
+    <h2>3. Make a Payment</h2>
+    <!-- Stripe and PayPal buttons will go here -->
+  </section>
+
+  <section id="reviews">
+    <h2>4. Leave a Review</h2>
+    <form id="reviewForm">
+      <input type="text" placeholder="Your name (optional)" id="reviewName" />
+      <textarea placeholder="Write your review..." id="reviewText" required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
+    <div id="reviewList"></div>
+  </section>
+
+  <!-- Tawk.to live chat script will go here -->
+  <script src="script.js"></script>
+</body>
+</html>
