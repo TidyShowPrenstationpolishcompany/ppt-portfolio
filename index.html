@@ -3,101 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PowerPoint Design Services</title>
+  <title>PowerPoint Design Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Fixed navigation */
-    #nav {
-      position: fixed;
-      top: 0;
-      right: 20px;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 10px 20px;
-      border-radius: 5px;
-    }
-    #nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
-    }
-    /* Header styling */
-    header {
-      background: #f8f8f8;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5em;
-    }
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-    /* Previous works section */
-    #previousWorks {
-      padding: 50px;
-      background-color: #e0e0e0;
-    }
-    .work {
-      margin: 10px;
-      display: inline-block;
-      width: 250px;
-      height: 200px;
-      background-color: #ddd;
-      text-align: center;
-      line-height: 200px;
-      color: #333;
-      font-size: 1.2em;
-      border-radius: 5px;
-    }
-    #quote {
-      padding: 50px;
-      background-color: #f4f4f4;
-      text-align: center;
-    }
-    #quote button {
-      padding: 10px 20px;
-      font-size: 1em;
-      cursor: pointer;
-      border: none;
-      background-color: #4CAF50;
-      color: white;
-      border-radius: 5px;
-    }
-  </style>
 </head>
 <body>
-  <!-- Fixed Navigation -->
-  <div id="nav">
-    <a href="#quote">Estimate a Quote</a>
-  </div>
-
   <header>
-    <h1>Custom PowerPoint Design Services</h1>
-    <p>Transform your ideas into stunning PowerPoint presentations.</p>
+    <h1>PowerPoint Design Services</h1>
+    <p>Professional presentations tailored to your brand.</p>
+    <nav class="top-right">
+      <a href="quote.html" class="quote-btn">Estimate a Quote</a>
+    </nav>
   </header>
 
-  <!-- Previous Works Section -->
-  <section id="previousWorks">
-    <h2>Previous Works</h2>
-    <p>Here are some of the projects I've worked on:</p>
-    <div class="work">Project 1</div>
-    <div class="work">Project 2</div>
-    <div class="work">Project 3</div>
-    <!-- Add images or descriptions of your actual previous works here -->
-  </section>
-
-  <!-- Quote Estimation Section -->
-  <section id="quote">
-    <h2>Get an Estimate</h2>
-    <p>Fill out the form below to estimate the cost of your PowerPoint design project.</p>
-    <label>Number of slides: <input type="number" id="slides" min="1" /></label>
-    <label><input type="checkbox" id="animations" /> Include animations</label>
-    <label><input type="checkbox" id="branding" /> Include custom branding</label>
-    <button onclick="calculateQuote()">Estimate Price</button>
-    <p id="quoteResult"></p>
-  </section>
-
-  <script src="script.js"></script>
+  <main>
+    <section id="portfolio">
+      <h2>My Previous Work</h2>
+      <p>Here are some samples of my past PowerPoint projects:</p>
+      <div class="gallery">
+        <!-- Replace with real images -->
+        <img src="images/sample1.jpg" alt="Sample Slide 1" />
+        <img src="images/sample2.jpg" alt="Sample Slide 2" />
+        <img src="images/sample3.jpg" alt="Sample Slide 3" />
+      </div>
+    </section>
+  </main>
 </body>
 </html>
