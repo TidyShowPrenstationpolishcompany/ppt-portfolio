@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estimate a Quote</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="index.html" style="position:fixed;top:15px;left:15px;text-decoration:none;">← Back to Home</a>
+
+  <section style="padding:40px;text-align:center;">
+    <h2>Get an Estimate</h2>
+    <p>Fill out the details to calculate an estimated cost for your presentation.</p>
+
+    <label>Number of slides: <input type="number" id="slides" min="1" /></label><br><br>
+    <label><input type="checkbox" id="animations" /> Include animations</label><br>
+    <label><input type="checkbox" id="branding" /> Include custom branding</label><br><br>
+    <button onclick="calculateQuote()">Estimate Price</button>
+    <p id="quoteResult" style="margin-top:20px;font-size:1.2em;"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
